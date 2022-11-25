@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Pig Game🎲</title>
+  </head>
+  <body>
+    <main>
+      <section class="player player__0 player__active">
+        <h2 class="name" id="name__0">Player 1</h2>
+        <p class="score" id="score__0">43</p>
+        <div class="current currentLeft">
+          <p class="current__label">Current</p>
+          <p class="current__score" id="current__0">0</p>
+        </div>
+      </section>
+      <section class="player player__1">
+        <h2 class="name" id="name__1">Player 2</h2>
+        <p class="score" id="score__1">24</p>
+        <div class="current currentRight">
+          <p class="current__label">Current</p>
+          <p class="current__score" id="current__1">0</p>
+        </div>
+      </section>
+      <img src="../img/dice-5.png" class="dice" alt="Playing dice" />
+      <button class="btn btn__new">🔁 New Game</button>
+      <button class="btn btn__roll">🎲 Roll Dice</button>
+      <button class="btn btn__hold">📥️ Hold</button>
+    </main>
+    <div class="instructions">
+      <h3 class="instructions__heading">How to play ▶️</h3>
+      <ul>
+        <li>👉️ Click the roll dice to begin</li>
+        <li>👉️ You can roll randomly from 1 to 6</li>
+        <li>
+          👉️ if you roll a one, you cannot play as it is your opponent's turn
+        </li>
+        <li>
+          👉️ click on hold to keep your current score otherwise you will loose
+          it all if you roll a 1
+        </li>
+        <li>👉️ if you score 100 and above you win🏆️🎊🎉</li>
+      </ul>
+      <label for="input1">Name of Player 1 🤵:</label>
+      <input name="input1" class="input input1" />
+      <label for="input2">Name of Player 2 👲:</label>
+      <input name="input2" class="input input2" />
+      <button class="submitBtn">Submit</button>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
